@@ -14,8 +14,8 @@ class TestController extends Controller
     public function index()
     {
 //        dd('test');
-//        $u = new User(['email' => 'bartek.szyma@gmail.com']);
-//        Mail::to($u)->send(new Welcome());
+        $u = new User(['email' => 'pawel.tomala@gmail.com']);
+        Mail::to($u)->send(new Welcome());
 //        dd($u);
 //        User::where('id', 8)->get()
 //return 'cool bro';

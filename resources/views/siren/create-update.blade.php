@@ -29,7 +29,7 @@
             </div>
 
             <label for="cash" class="sr-only">Net cash</label>
-            <input type="number" id="cash" name="cash" class="form-control" placeholder="Net cash" required
+            <input type="number" step="0.01" id="cash" name="cash" class="form-control" placeholder="Net cash" required
              @if(isset($transaction))
                 {{ "value=$transaction->cash" }}
              @endif
@@ -64,7 +64,7 @@
             </div>
 
             <label for="size" class="sr-only">Position size</label>
-            <input type="number" id="size" name="size" class="form-control" placeholder="Position size" required
+            <input type="number" step="0.01" id="size" name="size" class="form-control" placeholder="Position size" required
             @if(isset($transaction))
                 {{ "value=$transaction->size" }}
             @endif
@@ -83,7 +83,7 @@
             </div>
 
             <label for="strike" class="sr-only">Strike</label>
-            <input type="number" id="strike" name="strike" class="form-control" placeholder="Strike" required
+            <input type="number" step="0.01" id="strike" name="strike" class="form-control" placeholder="Strike" required
             @if(isset($transaction))
                 {{ "value=$transaction->strike" }}
             @endif

@@ -170,7 +170,6 @@
                 '                @if(auth()->id() === 1)' +
                 '                    <button class="btn btn-lg btn-primary" type="submit">Create</button>' +
                 '                @endif' +
-                '' +
                 '                Last update: {{ $lastDate }}' +
                 '            </form>')
         } );

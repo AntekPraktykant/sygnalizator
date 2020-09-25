@@ -28,7 +28,7 @@ class Welcome extends Mailable
      */
     public function build()
     {
-        $text = 'Hi, this is awesome text message as good morning';
+        $text = 'Hi, this is awesome text message';
         return $this->from('info@dividend-kingdom.com')->subject('dzień dobry')->html($text);
 //        return $this->view('view.name');
     }
